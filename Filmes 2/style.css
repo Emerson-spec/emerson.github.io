@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: white; /* Texto branco para contraste */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    margin-right: 20px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #000000;
+    width: 150px;
+    display: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+ul li a:hover {
+    background-color: #ff6600;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.filme-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.filme {
+    position: relative;
+    margin: 15px;
+    width: 200px;
+}
+
+.filme-info {
+    position: relative;
+}
+
+.filme img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.filme:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.filme-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.filme:hover .filme-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.filme-overlay p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Importa a fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: white; /* Texto branco para contraste */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do cabeçalho */
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaça o menu e o logo */
+    width: 100%;
+    max-width: 1200px; /* Largura máxima do cabeçalho */
+}
+
+.logo {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.logo h1 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 2.5em; /* Tamanho maior para mais impacto */
+    font-weight: 400;
+    color: #ff6600; /* Cor laranja para o logo */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra ao texto */
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #000000;
+    width: 150px;
+    display: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+ul li a:hover {
+    background-color: #ff6600;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.filme-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.filme {
+    position: relative;
+    margin: 15px;
+    width: 200px;
+}
+
+.filme-info {
+    position: relative;
+}
+
+.filme img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.filme:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.filme-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.filme:hover .filme-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.filme-overlay p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
